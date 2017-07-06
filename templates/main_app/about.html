@@ -1,0 +1,21 @@
+{% extends 'main_app/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About Rango
+{% endblock %}
+
+{% block style %}
+    img {
+        max-width: 750px;
+    }
+{% endblock %}
+
+{% block body_block %}
+    <h1>This is the Rango Project!</h1>
+    <p>This tutorial has been put together by Lee M. Raulin.</p>
+    <div>
+        <img src="{{MEDIA_URL}}cat.jpg" alt="Picture of a cat">
+    </div>
+    <p>You have visited {{ visits }} times.</p>
+{% endblock %}
